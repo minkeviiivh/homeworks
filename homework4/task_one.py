@@ -11,8 +11,12 @@ for key in data:
             result[key] = [value_ftr, None]
     if key in b:
         value_ftr = b[key]
+<<<<<<< HEAD
         if value_past := result.get(key, None):
             result[key] = [value_past[0], value_ftr]
         else:
             result[key] = [None, value_ftr]
+=======
+        result[key] = [a.get(key), b.get(key)]
+>>>>>>> 6019c970bd3f7be81dc5c0b9866de6646fc927f7
 print(result)
