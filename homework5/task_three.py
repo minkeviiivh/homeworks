@@ -5,4 +5,5 @@ counter = 0
 for i in file:
     if i.lower() == text.lower():
         counter += 1
+f.close()
 print(f'Результат: буква встречается {int(counter)} раза в тексте')
